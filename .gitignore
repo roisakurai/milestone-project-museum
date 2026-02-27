@@ -1,0 +1,12 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# Backend files (jika tidak mau dipush)
+server.js
+
+package-lock.json
+
+package.json
