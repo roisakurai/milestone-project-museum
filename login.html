@@ -36,7 +36,7 @@
             <a class="nav-link" href="contact.html">Contact</a>
             </li>
             <li class="nav-item mx-3">
-                <a class="nav-link" href="login.html">Account</a>
+                <a class="nav-link" href="#">Account</a>
             </li>
         </ul>
 
@@ -47,73 +47,50 @@
     
 
 
-<div class="container py-5">
-  <div class="row justify-content-center">
+<div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
+  <div class="login-card p-5">
 
+    <h2 class="mb-4 text-center">Member Login</h2>
+    <p class="text-center text-muted mb-4">
+      Access your account to manage bookings and tickets.
+    </p>
 
-    <div class="col-lg-8">
+    <form>
 
-      <h2 class="mb-4 text-center">Contact Us</h2>
-      <div class="row mb-5">
-  <div class="col-md-4 text-center">
-    <h6>Address</h6>
-    <p class="text-muted">567 Nongsa Point<br>Batam, Indonesia</p>
-  </div>
-  <div class="col-md-4 text-center">
-    <h6>Email</h6>
-    <p class="text-muted">info@sakuraimuseum.com</p>
-  </div>
-  <div class="col-md-4 text-center">
-    <h6>Phone</h6>
-    <p class="text-muted">+62 812 3456 7890</p>
-  </div>
-</div>
+      <div class="mb-4">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control rounded-0" required>
+      </div>
 
-      <p class="text-center text-muted mb-5">
-        Have questions about exhibitions, tickets, or collaborations?
-        Send us a message and we’ll respond shortly.
+      <div class="mb-4">
+        <label class="form-label">Password</label>
+        <input type="password" class="form-control rounded-0" required>
+      </div>
+
+      <div class="d-flex justify-content-between mb-4">
+        <div>
+          <input type="checkbox" class="form-check-input me-2" id="remember">
+          <label for="remember" class="form-check-label">Remember me</label>
+        </div>
+        <a href="#" class="login-link">Forgot password?</a>
+      </div>
+
+      <button type="submit" class="btn btn-dark rounded-0 w-100 py-2">
+        Login
+      </button>
+
+      <p class="text-center mt-4">
+        Don't have an account?
+        <a href="register.html" class="login-link">Register</a>
       </p>
 
-      
+    </form>
 
-      <form class="contact-form">
-
-        <div class="row">
-          <div class="col-md-6 mb-4">
-            <label class="form-label">Full Name</label>
-            <input type="text" class="form-control rounded-0" required>
-          </div>
-
-          <div class="col-md-6 mb-4">
-            <label class="form-label">Email Address</label>
-            <input type="email" class="form-control rounded-0" required>
-          </div>
-        </div>
-
-        <div class="mb-4">
-          <label class="form-label">Subject</label>
-          <input type="text" class="form-control rounded-0">
-        </div>
-
-        <div class="mb-4">
-          <label class="form-label">Message</label>
-          <textarea rows="5" class="form-control rounded-0" required></textarea>
-        </div>
-
-        <div class="text-center">
-          <button type="submit" class="btn btn-dark rounded-0 px-5">
-            Send Message
-          </button>
-        </div>
-
-      </form>
-
-    </div>
   </div>
 </div>
     
 
-  <footer class="footer mt-5 pt-5 pb-4">
+  <footer class="footer pt-5 pb-4">
   <div class="container">
     <div class="row">
 

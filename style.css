@@ -296,6 +296,41 @@ body {
 .contact-form .btn:hover {
   background-color: #000;
   color: #fff;
-  transform: translateY(-2px);
 }
 
+/* Login Page */
+
+.login-card {
+  width: 100%;
+  max-width: 450px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  transition: 0.3s ease;
+}
+
+.login-card .form-control {
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: 0.3s ease;
+}
+
+.login-card .form-control:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+.login-card label {
+  font-weight: 600;
+}
+
+.login-link {
+  color: #666;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.login-link:hover {
+  color: #000;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
