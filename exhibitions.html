@@ -1,0 +1,220 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+</head>
+
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4" data-bs-theme="dark">
+    <div class="container-fluid mx-5">
+        <a class="navbar-brand py-3" href="index.html"><img src="assets/images/museum-logo-white.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="exhibitions.html">Exhibitions</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="galleries.html">Galleries</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">My Account</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+    </nav>
+
+    <div class="container py-5">
+  <h1 class="display-5 mb-3">Exhibitions & Events</h1> 
+
+ <ul class="nav nav-underline exhibition-tabs" role="tablist">
+  <li class="nav-item">
+    <button class="nav-link active"
+            data-bs-toggle="tab"
+            data-bs-target="#exhibitions"
+            type="button">
+      Exhibitions
+    </button>
+  </li>
+
+  <li class="nav-item">
+    <button class="nav-link"
+            data-bs-toggle="tab"
+            data-bs-target="#events"
+            type="button">
+      Events
+    </button>
+  </li>
+</ul>
+
+  <div class="tab-content pt-4">
+
+  <div class="tab-pane fade show active" id="exhibitions">
+      <div class="container">
+
+  <div class="card exhibition-card mb-4 rounded-0">
+    <div class="row g-0 align-items-center">
+      
+      <div class="col-md-5">
+        <img src="assets/images/1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg"
+             class="img-fluid exhibition-img"
+             alt="Van Gogh">
+      </div>
+
+      <div class="col-md-7">
+        <div class="card-body p-5">
+          <h3 class="card-title mb-2">Van Gogh Paintings</h3>
+          <p class="mb-2">Experience the emotional depth and vibrant brushwork of Vincent van Gogh
+through a curated collection of his most celebrated masterpieces,
+including rare studies and immersive storytelling installations..</p>
+         <div class="event-meta mt-4">
+
+  <div class="d-flex align-items-center mb-3 meta-item">
+    <svg class="meta-icon" width="24" height="24" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="currentColor" stroke="currentColor" stroke-width="0.00015000000000000001"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path fill="currentColor" fill-rule="evenodd" d="M61,154.006845 C61,153.45078 61.4499488,153 62.0068455,153 L73.9931545,153 C74.5492199,153 75,153.449949 75,154.006845 L75,165.993155 C75,166.54922 74.5500512,167 73.9931545,167 L62.0068455,167 C61.4507801,167 61,166.550051 61,165.993155 L61,154.006845 Z M62,157 L74,157 L74,166 L62,166 L62,157 Z M64,152.5 C64,152.223858 64.214035,152 64.5046844,152 L65.4953156,152 C65.7740451,152 66,152.231934 66,152.5 L66,153 L64,153 L64,152.5 Z M70,152.5 C70,152.223858 70.214035,152 70.5046844,152 L71.4953156,152 C71.7740451,152 72,152.231934 72,152.5 L72,153 L70,153 L70,152.5 Z" transform="translate(-61 -152)"></path> </g></svg>
+    <span class="ms-3">Rp. 75.000</span>
+  </div>
+
+  <div class="d-flex align-items-center mb-3 meta-item">
+    <svg class="meta-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <path d="M5 12.0002C5 10.694 4.16519 9.58273 3 9.1709V7.6C3 7.03995 3 6.75992 3.10899 6.54601C3.20487 6.35785 3.35785 6.20487 3.54601 6.10899C3.75992 6 4.03995 6 4.6 6H19.4C19.9601 6 20.2401 6 20.454 6.10899C20.6422 6.20487 20.7951 6.35785 20.891 6.54601C21 6.75992 21 7.03995 21 7.6V9.17071C19.8348 9.58254 19 10.694 19 12.0002C19 13.3064 19.8348 14.4175 21 14.8293V16.4C21 16.9601 21 17.2401 20.891 17.454C20.7951 17.6422 20.6422 17.7951 20.454 17.891C20.2401 18 19.9601 18 19.4 18H4.6C4.03995 18 3.75992 18 3.54601 17.891C3.35785 17.7951 3.20487 17.6422 3.10899 17.454C3 17.2401 3 16.9601 3 16.4V14.8295C4.16519 14.4177 5 13.3064 5 12.0002Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path> </g></svg>
+    <span class="ms-3">15 January – 25 May 2026</span>
+  </div>
+
+  
+
+</div>
+
+          <button class="btn btn-dark rounded-0 px-4">
+            Book Ticket Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+  </div>
+
+  <div class="tab-pane fade" id="events">
+    <div class="container pb-5">
+
+  <div class="card exhibition-card mb-4 border-0 rounded-0">
+    <div class="row g-0 align-items-center">
+      
+      <div class="col-md-5">
+        <img src="assets/images/whats-on-cpk-website-fergus-and-meg.jpg"
+             class="img-fluid exhibition-img"
+             alt="Van Gogh">
+      </div>
+
+      <div class="col-md-7">
+        <div class="card-body p-5">
+          <h3 class="card-title mb-2">Van Gogh Paintings</h3>
+          <p class="mb-3">Exhibition</p>
+          <p class="mb-4">15 January – 25 May 2026</p>
+
+          <button class="btn btn-dark rounded-0 px-4">
+            Book Ticket Now
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+  </div>
+
+</div>
+
+
+</div>
+
+
+    
+
+  <footer class="footer mt-5 pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <img src="assets/images/museum-logo-white.png" alt="Museum Logo" class="mb-3" style="height:40px;">
+        <p class="footer-text">
+          A curated digital museum showcasing timeless masterpieces from the world’s greatest artists.
+        </p>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6 class="footer-heading">Explore</h6>
+        <ul class="list-unstyled">
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+<div class="col-md-3 mb-4">
+  <h6 class="footer-heading">Visit Us</h6>
+
+  <ul class="list-unstyled footer-text">
+<li class="mb-2">
+      567 Nongsa Point<br>
+      Batam, Kepulauan Riau, Indonesia
+    </li>
+    <li class="mb-2">
+      Mon – Sat
+    </li>
+    <li class="mb-2">
+      9:00 AM – 6:00 PM
+    </li>
+    <li>
+      Closed Sunday
+    </li>
+  </ul>
+</div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="footer-heading">Newsletter</h6>
+        <p class="footer-text">Get updates on new exhibitions and collections.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control rounded-0" placeholder="Your email">
+            <button class="btn btn-light rounded-0" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="text-center small">
+      © 2026 Paniroi Sakurai. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

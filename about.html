@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.cdnfonts.com/css/helvetica-neue-55" rel="stylesheet">
+</head>
+
+  <body>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4" data-bs-theme="dark">
+    <div class="container-fluid mx-5">
+        <a class="navbar-brand py-3" href="index.html"><img src="assets/images/museum-logo-white.png" alt="Logo"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+  
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="exhibitions.html">Exhibitions</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="galleries.html">Galleries</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item mx-3">
+            <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item mx-3">
+                <a class="nav-link" href="#">My Account</a>
+            </li>
+        </ul>
+
+        </div>
+    </div>
+    </nav>
+
+    <div class="card text-bg-dark border-0 rounded-0 hero-section">
+  <img src="assets/images/Smithsonian_American_Art_Museum_exterior_3.jpg" class="card-img border-0 rounded-0" alt="...">
+  <div class="card-img-overlay d-flex align-items-end p-4 rounded-0">
+      <div class="container">
+    <h1 class="display-3">Sakurai Museum Story</h1>
+  </div>
+  </div>
+</div>
+
+<div class="container my-4 border-bottom">
+<nav style="--bs-breadcrumb-divider: url(&#34;data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='8'%3E%3Cpath d='M2.5 0L1 1.5 3.5 4 1 6.5 2.5 8l4-4-4-4z' fill='%236c757d'/%3E%3C/svg%3E&#34;);" aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+    <li class="breadcrumb-item active" aria-current="page">About</li>
+  </ol>
+</nav>
+</div>
+
+<div class="container mt-4 mb-5">
+  <h2>The first national public museum in Batam.</h2>
+  <p>The British Museum was founded in 2010 and opened its doors in 2011. It was the first national museum to cover all fields of human knowledge, open to visitors from across the world.</p>
+  <p>Enlightenment ideals and values - critical scrutiny of all assumptions, open debate, scientific research, progress and tolerance - have marked the Museum since its foundation.</p>
+  <p>The Museum is driven by an insatiable curiosity for the world, a deep belief in objects as reliable witnesses and documents of human history, sound research, as well as the desire to expand and share knowledge.</p>
+ </div>
+
+<div class="container my-5">
+  <h2 class="mb-4">Frequently Asked Questions</h2>
+
+  <div class="accordion" id="faqAccordion">
+
+    <div class="accordion-item rounded-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq1">
+          What are the museum opening hours?
+        </button>
+      </h2>
+      <div id="faq1" class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          We are open Monday – Saturday from 9:00 AM to 6:00 PM.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item rounded-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq2">
+          Is there an entrance fee?
+        </button>
+      </h2>
+      <div id="faq2" class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          General admission is free. Special exhibitions may require tickets.
+        </div>
+      </div>
+    </div>
+
+    <div class="accordion-item rounded-0">
+      <h2 class="accordion-header">
+        <button class="accordion-button collapsed" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#faq3">
+          Do you offer guided tours?
+        </button>
+      </h2>
+      <div id="faq3" class="accordion-collapse collapse"
+           data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Yes, guided tours are available upon request.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+
+<div class="container my-5">
+    <h2 class="mb-4">Museum History</h2>
+ <div class="row row-cols-1 row-cols-md-3 g-4 mb-5">
+
+  <div class="col">
+     <div class="card rounded-0 about-card">
+    <img src="assets/images/1920px-Van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" class="card-img rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="col">
+     <div class="card rounded-0 about-card">
+    <img src="assets/images/the_bridge_at_argenteuil_1983.1.24.jpg" class="card-img rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    </div>
+  </div>
+
+  <div class="col">
+     <div class="card rounded-0 about-card">
+    <img src="assets/images/argenteuil_1970.17.42.jpg" class="card-img rounded-0" alt="...">
+    <div class="card-body">
+      <h5 class="card-title">Card title</h5>
+      <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+    </div>
+    </div>
+  </div>
+</div>
+</div>
+
+
+  <footer class="footer mt-5 pt-5 pb-4">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-4 mb-4">
+        <img src="assets/images/museum-logo-white.png" alt="Museum Logo" class="mb-3" style="height:40px;">
+        <p class="footer-text">
+          A curated digital museum showcasing timeless masterpieces from the world’s greatest artists.
+        </p>
+      </div>
+
+      <div class="col-md-2 mb-4">
+        <h6 class="footer-heading">Explore</h6>
+        <ul class="list-unstyled">
+          <li><a href="exhibitions.html">Exhibitions</a></li>
+          <li><a href="galleries.html">Galleries</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+
+
+<div class="col-md-3 mb-4">
+  <h6 class="footer-heading">Visit Us</h6>
+
+  <ul class="list-unstyled footer-text">
+    <li class="mb-2">
+      567 Nongsa Point<br>
+      Batam, Kepulauan Riau, Indonesia
+    </li>
+    <li class="mb-2">
+      Mon – Sat
+    </li>
+    <li class="mb-2">
+      9:00 AM – 6:00 PM
+    </li>
+    <li>
+      Closed Sunday
+    </li>
+  </ul>
+</div>
+
+      <div class="col-md-3 mb-4">
+        <h6 class="footer-heading">Newsletter</h6>
+        <p class="footer-text">Get updates on new exhibitions and collections.</p>
+        <form>
+          <div class="input-group">
+            <input type="email" class="form-control rounded-0" placeholder="Your email">
+            <button class="btn btn-light rounded-0" type="submit">Subscribe</button>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+    <hr class="footer-divider">
+
+    <div class="text-center small">
+      © 2026 Paniroi Sakurai. All rights reserved.
+    </div>
+  </div>
+</footer>
+
+
+  </body>
+</html>

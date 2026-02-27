@@ -1,0 +1,301 @@
+@font-face {
+    font-family: 'Helvetica Neue Medium';
+    src: url('assets/fonts/helvetica-neue-5/HelveticaNeueMedium.otf');
+}
+
+body {
+    font-family: 'Helvetica Neue Medium', sans-serif;
+}
+
+.navbar {
+    background-color: #000000 !important;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar-brand img {
+    height: 45px; 
+    width: auto;
+}
+
+
+/* bread crumb */
+.breadcrumb {
+    font-size: 1.1rem;
+}
+
+.breadcrumb-item a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb-item a:hover {
+    color: #000;
+    text-decoration: underline;
+    text-underline-offset: 4px;
+}
+
+.breadcrumb-item.active {
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    text-decoration-thickness: 2px;
+}
+
+
+
+
+
+/* Home page */
+.carousel-item {
+    height: 700px;
+}
+
+.carousel-item img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.masonry {
+    column-count: 4;
+    column-gap: 1.5rem;
+}
+
+.masonry-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+}
+
+.masonry-item img {
+    width: 100%;
+    display: block;
+}
+
+@media (max-width: 992px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 768px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 576px) {
+    .masonry {
+        column-count: 1;
+    }
+}
+
+
+
+
+
+/* Exhibitions page */
+.exhibition-tabs .nav-link {
+  color: #777 !important;
+  font-weight: 500;
+}
+
+.exhibition-tabs .nav-link:hover {
+  color: #000 !important;
+}
+
+.exhibition-tabs .nav-link.active {
+  color: #000 !important;
+  border-bottom: 2px solid #000;
+}
+
+.exhibition-card {
+  border: 1px solid #ddd;
+  transition: all 0.3s ease;
+}
+
+.exhibition-card .meta-icon {
+  color: #000;
+  transition: 0.3s ease;
+}
+
+.exhibition-card:hover {
+  background-color: #000;
+  color: #fff;
+  transform: scale(1.02);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.25);
+}
+
+.exhibition-card:hover .meta-icon {
+  color: #fff;
+}
+
+.exhibition-card .btn {
+  transition: 0.3s ease;
+}
+
+.exhibition-card:hover .btn {
+  background-color: #fff;
+  color: #000;
+  border-color: #fff;
+}
+
+
+
+
+
+
+
+
+/* Galleries page */
+.hero-section {
+    height: 500px;
+}
+
+.hero-section .card-img-overlay {
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0)
+  );
+}
+
+.hero-section img {
+    height: 100%;
+    object-fit: cover;
+}
+
+.pagination {
+  --bs-pagination-active-bg: #000;
+  --bs-pagination-active-border-color: #000;
+  --bs-pagination-active-color: #fff;
+  --bs-pagination-color: #000;   
+  --bs-pagination-hover-color: #000;    
+}
+
+.gallery-card {
+  transition: all 0.3s ease;
+}
+
+.gallery-card:hover {
+  transform: scale(1.05);
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.gallery-card:hover .card-title,
+.gallery-card:hover .card-text {
+  color: #fff;
+}
+
+/* Footer */
+.footer {
+  background-color: #000;
+  color: #fff;
+}
+
+.footer a {
+  color: #bbb;
+  text-decoration: none;
+  transition: 0.3s ease;
+}
+
+.footer a:hover {
+  color: #fff;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.footer-heading {
+  font-weight: bold;
+  margin-bottom: 1rem;
+  letter-spacing: 1px;
+}
+
+.footer-text {
+  color: #bbb;
+  font-size: 0.95rem;
+}
+
+.footer-divider {
+  border-color: rgba(255,255,255,0.1);
+  margin: 2rem 0;
+}
+
+.footer ul li {
+  line-height: 1.8;
+}
+
+/* About Page */
+.about-card img {
+  height: 300px;
+  object-fit: cover;
+}
+
+.about-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.about-card .card-body {
+  flex-grow: 1;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #000;
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-item {
+  border: 1px solid #ddd;
+}
+
+.about-card {
+  transition: all 0.3s ease;
+}
+
+.about-card:hover {
+  transform: scale(1.05);
+  background-color: #000;
+  color: #fff;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+.about-card:hover .card-title,
+.about-card:hover .card-text {
+  color: #fff;
+}
+
+/* Contact Page */
+.contact-form .form-control {
+  border: 1px solid #ddd;
+  padding: 12px;
+  transition: 0.3s ease;
+}
+
+.contact-form .form-control:focus {
+  border-color: #000;
+  box-shadow: none;
+}
+
+.contact-form label {
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.contact-form .btn {
+  transition: 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
