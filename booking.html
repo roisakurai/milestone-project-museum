@@ -45,49 +45,39 @@
     </nav>
 
     
+    <div class="container py-5">
+  <h1 class="mb-4">Book Your Ticket</h1>
 
+  <div class="card p-4 rounded-0">
 
-<div class="container d-flex align-items-center justify-content-center" style="min-height: 80vh;">
-  <div class="login-card p-5">
+    <div class="mb-3">
+      <label class="form-label">Exhibition</label>
+      <select class="form-select" id="exhibition">
+        <option value="75000">Van Gogh Paintings - Rp 75.000</option>
+      </select>
+    </div>
 
-    <h2 class="mb-4 text-center">Member Login</h2>
-    <p class="text-center text-muted mb-4">
-      Access your account to manage bookings and tickets.
-    </p>
+    <div class="mb-3">
+      <label class="form-label">Visit Date</label>
+      <input type="date" class="form-control" id="date">
+    </div>
 
-    <form id="loginForm">
+    <div class="mb-3">
+      <label class="form-label">Number of Tickets</label>
+      <input type="number" class="form-control" id="quantity" min="1" value="1">
+    </div>
 
-      <div class="mb-4">
-        <label class="form-label">Email Address</label>
-        <input type="email" name="email" class="form-control rounded-0" required>
-      </div>
+    <hr>
 
-      <div class="mb-4">
-        <label class="form-label">Password</label>
-        <input type="password" name="password" class="form-control rounded-0" required>
-      </div>
+    <h4>Total Price: Rp <span id="total">75000</span></h4>
 
-      <div class="d-flex justify-content-between mb-4">
-        <div>
-          <input type="checkbox" class="form-check-input me-2" id="remember">
-          <label for="remember" class="form-check-label">Remember me</label>
-        </div>
-        <a href="#" class="login-link">Forgot password?</a>
-      </div>
-
-      <button type="submit" class="btn btn-dark rounded-0 w-100 py-2">
-        Login
-      </button>
-
-      <p class="text-center mt-4">
-        Don't have an account?
-        <a href="register.html" class="login-link">Register</a>
-      </p>
-
-    </form>
+    <button class="btn btn-dark mt-3 rounded-0" id="bookBtn">
+      Confirm Booking
+    </button>
 
   </div>
 </div>
+
     
 
   <footer class="footer pt-5 pb-4">
@@ -153,31 +143,40 @@
 </footer>
 
 <script>
-document.getElementById("loginForm").addEventListener("submit", async function(e) {
-  e.preventDefault();
+  const exhibition = document.getElementById("exhibition");
+const quantity = document.getElementById("quantity");
+const totalDisplay = document.getElementById("total");
+const bookBtn = document.getElementById("bookBtn");
 
-  const email = this.email.value;
-  const password = this.password.value;
+function calculateTotal() {
+  const price = parseInt(exhibition.value);
+  const qty = parseInt(quantity.value);
+  const total = price * qty;
+  totalDisplay.textContent = total.toLocaleString("id-ID");
+}
 
-  const response = await fetch("http://localhost:8000/login", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ email, password })
-  });
+quantity.addEventListener("input", calculateTotal);
+exhibition.addEventListener("change", calculateTotal);
 
-  const data = await response.json();
+bookBtn.addEventListener("click", function () {
+  const bookingData = {
+    exhibition: exhibition.options[exhibition.selectedIndex].text,
+    date: document.getElementById("date").value,
+    quantity: quantity.value,
+    total: totalDisplay.textContent
+  };
 
-  if (response.ok) {
-    // simpan token di localStorage
-    localStorage.setItem("token", data.token);
-    alert("Login successful");
-  } else {
-    alert(data.message);
+  if (!bookingData.date) {
+    alert("Please select a visit date.");
+    return;
   }
+
+  localStorage.setItem("booking", JSON.stringify(bookingData));
+
+  alert("Booking successful! Check your confirmation page.");
 });
 </script>
+
 
   </body>
 </html>
